@@ -1,4 +1,6 @@
-﻿using System;
+﻿using online.smyhw.KQ.chat_backup.Code;
+using Native.Sdk.Cqp.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +20,8 @@ namespace Native.Core
 		/// <param name="container">用于注册的 IOC 容器 </param>
 		public static void Register (IUnityContainer unityContainer)
 		{
-			
+			unityContainer.RegisterType<IGroupMessage, Event_GroupMessage>("群消息处理");
+			unityContainer.RegisterType<IAppEnable, Event_Enable>("应用已被启用");
 		}
 	}
 }

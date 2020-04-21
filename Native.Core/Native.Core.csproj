@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Native.Core</RootNamespace>
-    <AssemblyName>Native.Core</AssemblyName>
+    <AssemblyName>online.smyhw.KQ.chat_backup</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -130,6 +130,10 @@
     <ProjectReference Include="..\Native.Sdk\Native.Sdk.csproj">
       <Project>{d7a958b3-79d9-49f8-8bb4-9619bab6ecba}</Project>
       <Name>Native.Sdk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\online.smyhw.KQ.chat_backup.Code\online.smyhw.KQ.chat_backup.Code.csproj">
+      <Project>{0fe622c8-b56b-46c8-800b-908fc185539a}</Project>
+      <Name>online.smyhw.KQ.chat_backup.Code</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
